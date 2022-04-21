@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="Rakwa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qLw-4p-4GB">
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="52"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVr-eF-ceE">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="52"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zzl-h7-8Gg">
+                                        <rect key="frame" x="10" y="11" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="J25-Av-ENz"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Us2-pF-cuK"/>
+                                            <constraint firstAttribute="height" constant="30" id="ha2-wY-S0l"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8bB-Qo-U0z"/>
+                                    <constraint firstItem="Zzl-h7-8Gg" firstAttribute="centerY" secondItem="fVr-eF-ceE" secondAttribute="centerY" id="9Wt-vu-yHI"/>
+                                    <constraint firstItem="Zzl-h7-8Gg" firstAttribute="centerX" secondItem="fVr-eF-ceE" secondAttribute="centerX" id="fdo-2W-dcj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-Il-qBD">
+                                <rect key="frame" x="60" y="0.0" width="206" height="52"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qLw-4p-4GB" secondAttribute="trailing" id="N3q-Vz-Dhn"/>
+                    <constraint firstAttribute="bottom" secondItem="qLw-4p-4GB" secondAttribute="bottom" id="QZj-Gi-pe4"/>
+                    <constraint firstItem="qLw-4p-4GB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mvj-ml-6gA"/>
+                    <constraint firstItem="qLw-4p-4GB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zww-69-9kQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgName" destination="Zzl-h7-8Gg" id="XKp-y6-2we"/>
+                <outlet property="labelName" destination="Fow-Il-qBD" id="MX1-nx-jVc"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="100.44642857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

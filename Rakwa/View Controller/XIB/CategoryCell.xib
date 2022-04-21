@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pTr-Gt-Ltu" customClass="CategoryCell" customModule="Rakwa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="h22-uA-5dD">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9O-JJ-uN1" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="95" height="93"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jxU-dd-mb8">
+                                <rect key="frame" x="0.0" y="0.0" width="95" height="93"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40k-kj-x4v">
+                                        <rect key="frame" x="8" y="8" width="79" height="28"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKL-ws-pqO">
+                                                <rect key="frame" x="24.5" y="0.0" width="30" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="d5d-bh-Fdj"/>
+                                                    <constraint firstAttribute="height" constant="28" id="xc5-nU-QrO"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="oKL-ws-pqO" firstAttribute="centerY" secondItem="40k-kj-x4v" secondAttribute="centerY" id="PLe-bC-8jd"/>
+                                            <constraint firstAttribute="height" constant="28" id="twl-5h-90y"/>
+                                            <constraint firstItem="oKL-ws-pqO" firstAttribute="centerX" secondItem="40k-kj-x4v" secondAttribute="centerX" id="xH4-bk-KIY"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-8D-SG9">
+                                        <rect key="frame" x="8" y="40" width="79" height="49"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="4" trailing="8"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jxU-dd-mb8" firstAttribute="leading" secondItem="U9O-JJ-uN1" secondAttribute="leading" id="4EE-oa-2AY"/>
+                            <constraint firstItem="jxU-dd-mb8" firstAttribute="top" secondItem="U9O-JJ-uN1" secondAttribute="top" id="Dlw-Rx-iAL"/>
+                            <constraint firstAttribute="bottom" secondItem="jxU-dd-mb8" secondAttribute="bottom" id="OsT-mq-Bmu"/>
+                            <constraint firstAttribute="trailing" secondItem="jxU-dd-mb8" secondAttribute="trailing" id="RHG-hM-TEN"/>
+                            <constraint firstItem="jxU-dd-mb8" firstAttribute="top" secondItem="U9O-JJ-uN1" secondAttribute="top" id="Sjs-Ru-g1S"/>
+                            <constraint firstItem="jxU-dd-mb8" firstAttribute="leading" secondItem="U9O-JJ-uN1" secondAttribute="leading" id="Yx4-iX-Fik"/>
+                            <constraint firstAttribute="trailing" secondItem="jxU-dd-mb8" secondAttribute="trailing" id="lWq-Ge-BVA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="U9O-JJ-uN1" secondAttribute="bottom" constant="5" id="0Pj-21-NRj"/>
+                    <constraint firstAttribute="trailing" secondItem="U9O-JJ-uN1" secondAttribute="trailing" constant="5" id="UZF-S3-jKy"/>
+                    <constraint firstItem="U9O-JJ-uN1" firstAttribute="top" secondItem="h22-uA-5dD" secondAttribute="top" constant="5" id="q3T-ca-IFT"/>
+                    <constraint firstItem="U9O-JJ-uN1" firstAttribute="leading" secondItem="h22-uA-5dD" secondAttribute="leading" constant="5" id="shn-of-FQx"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="105" height="103"/>
+            <connections>
+                <outlet property="categoryView" destination="U9O-JJ-uN1" id="gfc-Jv-c3U"/>
+                <outlet property="img" destination="oKL-ws-pqO" id="roS-2Q-Srl"/>
+                <outlet property="textLabel" destination="aAZ-8D-SG9" id="1tj-gu-g7w"/>
+            </connections>
+            <point key="canvasLocation" x="-41.304347826086961" y="51.227678571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b7G-x1-X4V" customClass="SavedCell" customModule="Rakwa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="221"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="221"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVv-yF-kDI" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="155" height="201"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="thS-1V-2FR">
+                                <rect key="frame" x="0.0" y="0.0" width="155" height="201"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMq-Hj-54l">
+                                        <rect key="frame" x="8" y="8" width="139" height="142"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="E0U-LS-Bba" customClass="UIImageViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="123" height="126"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf2-gi-UNb">
+                                                <rect key="frame" x="99" y="14" width="30" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="diR-pq-on7"/>
+                                                    <constraint firstAttribute="width" constant="30" id="jk8-zL-Vad"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <state key="normal" image="heart.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9x-5M-XVw" customClass="MainLabel" customModule="Rakwa" customModuleProvider="target">
+                                                <rect key="frame" x="31.5" y="111" width="76" height="17"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="E0U-LS-Bba" secondAttribute="bottom" constant="8" id="FpX-66-6HH"/>
+                                            <constraint firstAttribute="height" constant="142" id="Px8-qT-AV9"/>
+                                            <constraint firstAttribute="bottom" secondItem="X9x-5M-XVw" secondAttribute="bottom" constant="14" id="QJR-dy-qBC"/>
+                                            <constraint firstItem="E0U-LS-Bba" firstAttribute="top" secondItem="UMq-Hj-54l" secondAttribute="top" constant="8" id="f0h-kj-VcO"/>
+                                            <constraint firstAttribute="trailing" secondItem="E0U-LS-Bba" secondAttribute="trailing" constant="8" id="fkt-hw-mwt"/>
+                                            <constraint firstItem="X9x-5M-XVw" firstAttribute="centerX" secondItem="UMq-Hj-54l" secondAttribute="centerX" id="jKQ-dX-baC"/>
+                                            <constraint firstAttribute="trailing" secondItem="tf2-gi-UNb" secondAttribute="trailing" constant="10" id="oqY-IK-r9B"/>
+                                            <constraint firstItem="E0U-LS-Bba" firstAttribute="leading" secondItem="UMq-Hj-54l" secondAttribute="leading" constant="8" id="puo-fg-RFL"/>
+                                            <constraint firstItem="tf2-gi-UNb" firstAttribute="top" secondItem="UMq-Hj-54l" secondAttribute="top" constant="14" id="wKN-Kn-NBR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cairo Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOo-Mx-dD1">
+                                        <rect key="frame" x="8" y="150" width="139" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNg-Vc-kq3" customClass="RatingControl" customModule="Rakwa" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="167" width="139" height="26"/>
+                                        <color key="tintColor" name="btn"/>
+                                    </stackView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="thS-1V-2FR" firstAttribute="leading" secondItem="jVv-yF-kDI" secondAttribute="leading" id="3Po-5o-zKW"/>
+                            <constraint firstAttribute="trailing" secondItem="thS-1V-2FR" secondAttribute="trailing" id="3TZ-Pr-9F7"/>
+                            <constraint firstItem="thS-1V-2FR" firstAttribute="top" secondItem="jVv-yF-kDI" secondAttribute="top" id="7UD-nT-qRF"/>
+                            <constraint firstAttribute="bottom" secondItem="thS-1V-2FR" secondAttribute="bottom" id="vBn-t8-YQ0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="lBT-wF-Uif"/>
+            <constraints>
+                <constraint firstItem="jVv-yF-kDI" firstAttribute="top" secondItem="b7G-x1-X4V" secondAttribute="top" constant="10" id="Mlc-Hw-X04"/>
+                <constraint firstAttribute="bottom" secondItem="jVv-yF-kDI" secondAttribute="bottom" constant="10" id="NAR-2J-3tj"/>
+                <constraint firstItem="jVv-yF-kDI" firstAttribute="leading" secondItem="b7G-x1-X4V" secondAttribute="leading" constant="10" id="W2K-wC-WtA"/>
+                <constraint firstAttribute="trailing" secondItem="jVv-yF-kDI" secondAttribute="trailing" constant="10" id="dA4-Gr-vqA"/>
+            </constraints>
+            <size key="customSize" width="175" height="221"/>
+            <connections>
+                <outlet property="backdroundImg" destination="E0U-LS-Bba" id="sO5-tW-H0a"/>
+                <outlet property="category" destination="X9x-5M-XVw" id="0GP-wV-LDO"/>
+                <outlet property="favBtn" destination="tf2-gi-UNb" id="kbQ-TA-TE6"/>
+                <outlet property="ratingFavCategory" destination="UNg-Vc-kq3" id="y9k-l1-G3M"/>
+                <outlet property="title" destination="yOo-Mx-dD1" id="QZK-Je-KB9"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="4"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="E0U-LS-Bba">
+            <size key="intrinsicContentSize" width="313.5" height="143.5"/>
+        </designable>
+        <designable name="X9x-5M-XVw">
+            <size key="intrinsicContentSize" width="76" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="background" width="313.5" height="143.5"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <namedColor name="btn">
+            <color red="0.99199998378753662" green="0.56099998950958252" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

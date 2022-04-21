@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCell" id="gTV-IL-0wX" customClass="BannerCell" customModule="Rakwa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXv-e1-gtl" userLabel="Content View" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="337" height="190"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGc-hn-q2D" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="327" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundlist" translatesAutoresizingMaskIntoConstraints="NO" id="d1l-9G-sUG">
+                                        <rect key="frame" x="10" y="10" width="307" height="160"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A5-Jr-gvK">
+                                        <rect key="frame" x="26" y="79" width="181.5" height="36"/>
+                                        <string key="text">Buy, Sell, Rent 
+&amp; Exchange In One Click !</string>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="d1l-9G-sUG" firstAttribute="leading" secondItem="oGc-hn-q2D" secondAttribute="leading" constant="10" id="9uc-YA-tlx"/>
+                                    <constraint firstItem="4A5-Jr-gvK" firstAttribute="leading" secondItem="oGc-hn-q2D" secondAttribute="leading" constant="26" id="YpG-kP-fiG"/>
+                                    <constraint firstAttribute="bottom" secondItem="d1l-9G-sUG" secondAttribute="bottom" constant="10" id="e4D-zk-yh2"/>
+                                    <constraint firstItem="d1l-9G-sUG" firstAttribute="top" secondItem="oGc-hn-q2D" secondAttribute="top" constant="10" id="knE-FO-KQT"/>
+                                    <constraint firstAttribute="trailing" secondItem="d1l-9G-sUG" secondAttribute="trailing" constant="10" id="qzy-i5-Kok"/>
+                                    <constraint firstAttribute="bottom" secondItem="4A5-Jr-gvK" secondAttribute="bottom" constant="65" id="r1m-fY-FRH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oGc-hn-q2D" firstAttribute="leading" secondItem="uXv-e1-gtl" secondAttribute="leading" constant="5" id="0Ni-So-A7s"/>
+                            <constraint firstItem="oGc-hn-q2D" firstAttribute="top" secondItem="uXv-e1-gtl" secondAttribute="top" constant="5" id="Qtp-OH-H9P"/>
+                            <constraint firstAttribute="bottom" secondItem="oGc-hn-q2D" secondAttribute="bottom" constant="5" id="qaJ-ch-XMK"/>
+                            <constraint firstAttribute="trailing" secondItem="oGc-hn-q2D" secondAttribute="trailing" constant="5" id="vLb-My-hgz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uXv-e1-gtl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JDK-JK-gfB"/>
+                <constraint firstAttribute="trailing" secondItem="uXv-e1-gtl" secondAttribute="trailing" id="Jub-Uc-5ZZ"/>
+                <constraint firstItem="uXv-e1-gtl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e8z-48-zm5"/>
+                <constraint firstAttribute="bottom" secondItem="uXv-e1-gtl" secondAttribute="bottom" id="nUU-M3-RHg"/>
+            </constraints>
+            <size key="customSize" width="337" height="195"/>
+            <connections>
+                <outlet property="imageView" destination="d1l-9G-sUG" id="kpf-ft-EoM"/>
+                <outlet property="titleLabel" destination="4A5-Jr-gvK" id="XOq-Zg-m27"/>
+            </connections>
+            <point key="canvasLocation" x="16.666666666666668" y="-79.017857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="backgroundlist" width="313.5" height="143.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

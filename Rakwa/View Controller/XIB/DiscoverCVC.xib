@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="265" id="fGp-QF-0bc" customClass="DiscoverCVC" customModule="Rakwa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="297"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fGp-QF-0bc" id="A4d-SK-xlk">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="297"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbS-fK-CIw" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="397" height="277"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nrn-Jt-cLt">
+                                <rect key="frame" x="0.0" y="0.0" width="397" height="277"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-FQ-t8T">
+                                        <rect key="frame" x="15" y="0.0" width="367" height="170"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="uMz-FZ-8zR" customClass="UIImageViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="15" width="367" height="145"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="uMz-FZ-8zR" secondAttribute="bottom" constant="10" id="3uS-vr-DxB"/>
+                                            <constraint firstAttribute="trailing" secondItem="uMz-FZ-8zR" secondAttribute="trailing" id="4fj-dF-Cus"/>
+                                            <constraint firstAttribute="height" constant="170" id="O5D-no-Rqh"/>
+                                            <constraint firstItem="uMz-FZ-8zR" firstAttribute="top" secondItem="gxa-FQ-t8T" secondAttribute="top" constant="15" id="Ubx-hY-CYf"/>
+                                            <constraint firstItem="uMz-FZ-8zR" firstAttribute="leading" secondItem="gxa-FQ-t8T" secondAttribute="leading" id="XlC-uK-Nfa"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eO9-Gi-DcS">
+                                        <rect key="frame" x="15" y="170" width="367" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkN-dj-tw1">
+                                                <rect key="frame" x="0.0" y="0.0" width="367" height="15"/>
+                                                <string key="text">Debt Ratios On Your Own Terms
+</string>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-HK-fSv">
+                                                <rect key="frame" x="0.0" y="15" width="367" height="13"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="JYh-yc-DbT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="13"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Jv7-mr-r0M"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSM-lM-bp9">
+                                                        <rect key="frame" x="25" y="0.0" width="342" height="13"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="NcE-LS-Qgk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmh-UP-5p0">
+                                        <rect key="frame" x="15" y="198" width="367" height="75"/>
+                                        <string key="text">Lorem Ipsum available, but the majority have suffered alteration in some form  by injected humour, words which don't look even slightly believable.</string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="15" bottom="4" trailing="15"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nrn-Jt-cLt" secondAttribute="bottom" id="74p-34-egq"/>
+                            <constraint firstAttribute="trailing" secondItem="Nrn-Jt-cLt" secondAttribute="trailing" id="RpN-cM-b3t"/>
+                            <constraint firstItem="Nrn-Jt-cLt" firstAttribute="leading" secondItem="hbS-fK-CIw" secondAttribute="leading" id="ZYs-vg-nZv"/>
+                            <constraint firstItem="Nrn-Jt-cLt" firstAttribute="top" secondItem="hbS-fK-CIw" secondAttribute="top" id="o5n-PB-2je"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hbS-fK-CIw" secondAttribute="trailing" constant="10" id="TGg-dC-nQz"/>
+                    <constraint firstItem="hbS-fK-CIw" firstAttribute="top" secondItem="A4d-SK-xlk" secondAttribute="top" constant="10" id="fxa-ls-3zG"/>
+                    <constraint firstAttribute="bottom" secondItem="hbS-fK-CIw" secondAttribute="bottom" constant="10" id="oW7-Js-cLz"/>
+                    <constraint firstItem="hbS-fK-CIw" firstAttribute="leading" secondItem="A4d-SK-xlk" secondAttribute="leading" constant="10" id="zcY-d1-o90"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backgroundImg" destination="uMz-FZ-8zR" id="T09-L6-bal"/>
+                <outlet property="detailsL" destination="tmh-UP-5p0" id="J7D-rx-fDX"/>
+                <outlet property="timeL" destination="xSM-lM-bp9" id="bNa-7l-tAB"/>
+                <outlet property="titleL" destination="lkN-dj-tw1" id="Mz1-dY-jNB"/>
+            </connections>
+            <point key="canvasLocation" x="252.89855072463769" y="-132.25446428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="uMz-FZ-8zR">
+            <size key="intrinsicContentSize" width="313.5" height="143.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="background" width="313.5" height="143.5"/>
+        <image name="clock" width="12.5" height="12.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

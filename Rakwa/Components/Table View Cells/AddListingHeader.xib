@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddListingHeader" customModule="Rakwa" customModuleProvider="target">
+            <connections>
+                <outlet property="progressView" destination="eZp-ir-M7m" id="VdA-2Z-bcO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZp-ir-M7m" customClass="ProgressView" customModule="Rakwa" customModuleProvider="target">
+                    <rect key="frame" x="10" y="64" width="394" height="142"/>
+                    <color key="backgroundColor" name="background"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="eZp-ir-M7m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="GTw-lP-4W4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eZp-ir-M7m" secondAttribute="bottom" constant="20" id="IT6-VQ-WBo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eZp-ir-M7m" secondAttribute="trailing" constant="10" id="bGO-Do-uC2"/>
+                <constraint firstItem="eZp-ir-M7m" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="oB5-uR-AZA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="289.28571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DashboardCell" customModule="Rakwa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKZ-hh-2s0" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="137" height="140"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Lc8-6U-63r">
+                                <rect key="frame" x="0.0" y="0.0" width="137" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-cJ-AQT">
+                                        <rect key="frame" x="8" y="8" width="121" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saved" translatesAutoresizingMaskIntoConstraints="NO" id="rgu-jb-28d">
+                                                <rect key="frame" x="46.5" y="1" width="28" height="28"/>
+                                                <color key="tintColor" name="btn"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="Npp-g1-ksB"/>
+                                                    <constraint firstAttribute="width" constant="28" id="iN6-RJ-JeG"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="CVK-DJ-BsG"/>
+                                            <constraint firstItem="rgu-jb-28d" firstAttribute="centerX" secondItem="Rpl-cJ-AQT" secondAttribute="centerX" id="kEE-64-EI3"/>
+                                            <constraint firstItem="rgu-jb-28d" firstAttribute="centerY" secondItem="Rpl-cJ-AQT" secondAttribute="centerY" id="yXc-uV-fGA"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="My Listings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmG-9c-91U">
+                                        <rect key="frame" x="8" y="43" width="121" height="54"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="10"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaM-bX-JzZ" customClass="MainButton" customModule="Rakwa" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="102" width="121" height="30"/>
+                                        <color key="backgroundColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="yHN-Qq-Byh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="11"/>
+                                        <state key="normal" image="view-1"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="background"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lc8-6U-63r" firstAttribute="top" secondItem="jKZ-hh-2s0" secondAttribute="top" id="SUq-K9-jfk"/>
+                            <constraint firstAttribute="bottom" secondItem="Lc8-6U-63r" secondAttribute="bottom" id="Uo5-9J-o8M"/>
+                            <constraint firstAttribute="trailing" secondItem="Lc8-6U-63r" secondAttribute="trailing" id="bdV-KL-m9z"/>
+                            <constraint firstItem="Lc8-6U-63r" firstAttribute="leading" secondItem="jKZ-hh-2s0" secondAttribute="leading" id="kwZ-dC-Ks1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="Border"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jKZ-hh-2s0" secondAttribute="trailing" constant="10" id="VeO-S5-xhH"/>
+                <constraint firstAttribute="bottom" secondItem="jKZ-hh-2s0" secondAttribute="bottom" constant="10" id="Wcc-gb-Wc4"/>
+                <constraint firstItem="jKZ-hh-2s0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="bAi-87-1q2"/>
+                <constraint firstItem="jKZ-hh-2s0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qK6-bb-tub"/>
+            </constraints>
+            <size key="customSize" width="157" height="160"/>
+            <connections>
+                <outlet property="Name" destination="fmG-9c-91U" id="Dni-x5-s41"/>
+                <outlet property="img" destination="rgu-jb-28d" id="6sE-Ue-5C3"/>
+            </connections>
+            <point key="canvasLocation" x="128.2608695652174" y="24.776785714285712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="saved" width="24" height="20.5"/>
+        <image name="view-1" width="70.5" height="14"/>
+        <namedColor name="Border">
+            <color red="0.9100000262260437" green="0.9100000262260437" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btn">
+            <color red="0.99199998378753662" green="0.56099998950958252" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

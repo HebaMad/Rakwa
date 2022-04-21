@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialMediaView" customModule="Rakwa" customModuleProvider="target">
+            <connections>
+                <outlet property="img" destination="VNT-Zz-oyk" id="TC0-eh-a0l"/>
+                <outlet property="titleTxt" destination="7HG-zO-GD8" id="w6x-nE-K6q"/>
+                <outlet property="valueTxt" destination="IDX-sk-0i0" id="Cr4-Cc-Gcb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kxU-pu-yjh">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="185"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fF-Sy-QRs" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="182" height="169"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XS-iO-aAG">
+                            <rect key="frame" x="0.0" y="0.0" width="182" height="169"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="VNT-Zz-oyk">
+                                    <rect key="frame" x="8" y="10" width="50" height="149"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="c8e-3l-X6z"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3VT-Df-ltN">
+                                    <rect key="frame" x="58" y="10" width="116" height="149"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HG-zO-GD8">
+                                            <rect key="frame" x="8" y="32" width="100" height="38.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDX-sk-0i0">
+                                            <rect key="frame" x="8" y="78.5" width="100" height="38.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <directionalEdgeInsets key="directionalLayoutMargins" top="32" leading="8" bottom="32" trailing="8"/>
+                                </stackView>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="8" bottom="10" trailing="8"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9XS-iO-aAG" secondAttribute="trailing" id="IlH-Du-WJD"/>
+                        <constraint firstItem="9XS-iO-aAG" firstAttribute="top" secondItem="0fF-Sy-QRs" secondAttribute="top" id="LbI-Z1-Fsf"/>
+                        <constraint firstItem="9XS-iO-aAG" firstAttribute="leading" secondItem="0fF-Sy-QRs" secondAttribute="leading" id="abx-5C-vz3"/>
+                        <constraint firstAttribute="bottom" secondItem="9XS-iO-aAG" secondAttribute="bottom" id="xCT-0B-JWw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NUT-QM-HkR"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0fF-Sy-QRs" firstAttribute="top" secondItem="kxU-pu-yjh" secondAttribute="top" constant="8" id="6aP-XR-v0G"/>
+                <constraint firstAttribute="trailing" secondItem="0fF-Sy-QRs" secondAttribute="trailing" constant="8" id="BzT-ih-1z0"/>
+                <constraint firstItem="NUT-QM-HkR" firstAttribute="bottom" secondItem="0fF-Sy-QRs" secondAttribute="bottom" constant="8" id="lRJ-Lv-62r"/>
+                <constraint firstItem="0fF-Sy-QRs" firstAttribute="leading" secondItem="NUT-QM-HkR" secondAttribute="leading" constant="8" id="xYv-4M-11X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-150.72463768115944" y="64.620535714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="facebook" width="34" height="34"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

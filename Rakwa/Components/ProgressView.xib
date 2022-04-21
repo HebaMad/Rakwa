@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressView">
+            <connections>
+                <outlet property="progressBar" destination="LEp-EA-vLl" id="lH4-lK-BO2"/>
+                <outlet property="stepNo" destination="iDO-7H-VCO" id="i3c-oL-nBM"/>
+                <outlet property="titleLbl" destination="nf9-Oa-VJD" id="fGd-Fd-QVo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kUf-O5-gsQ">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="141"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTC-jE-7Hw" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="308" height="125"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTq-Q8-OcI">
+                            <rect key="frame" x="0.0" y="0.0" width="308" height="125"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Lot-7i-4T6">
+                                    <rect key="frame" x="8" y="10" width="292" height="105"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDO-7H-VCO">
+                                            <rect key="frame" x="4" y="4" width="284" height="20.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISTING DETAILS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-Oa-VJD">
+                                            <rect key="frame" x="4" y="26.5" width="284" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="agX-L2-z8w"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fj-Gg-pQ7">
+                                            <rect key="frame" x="4" y="58.5" width="284" height="42.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEp-EA-vLl" customClass="StepIndicatorView" customModule="Rakwa" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="5" width="264" height="32.5"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="tintColor" name="btn"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfSteps">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="currentStep">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                            <color key="value" name="Border"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleTintColor">
+                                                            <color key="value" name="btn"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                            <color key="value" name="Border"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="lineTintColor">
+                                                            <color key="value" name="btn"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LEp-EA-vLl" secondAttribute="trailing" constant="10" id="QzL-XY-LSx"/>
+                                                <constraint firstItem="LEp-EA-vLl" firstAttribute="top" secondItem="6fj-Gg-pQ7" secondAttribute="top" constant="5" id="SY6-op-dLa"/>
+                                                <constraint firstAttribute="bottom" secondItem="LEp-EA-vLl" secondAttribute="bottom" constant="5" id="tv0-uc-Ec5"/>
+                                                <constraint firstItem="LEp-EA-vLl" firstAttribute="leading" secondItem="6fj-Gg-pQ7" secondAttribute="leading" constant="10" id="vXY-Ss-pIb"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <directionalEdgeInsets key="directionalLayoutMargins" top="4" leading="4" bottom="4" trailing="4"/>
+                                </stackView>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="8" bottom="10" trailing="8"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pTq-Q8-OcI" secondAttribute="trailing" id="Arc-zX-bOw"/>
+                        <constraint firstItem="pTq-Q8-OcI" firstAttribute="leading" secondItem="OTC-jE-7Hw" secondAttribute="leading" id="C25-yw-Rvk"/>
+                        <constraint firstAttribute="bottom" secondItem="pTq-Q8-OcI" secondAttribute="bottom" id="fNI-JH-BEa"/>
+                        <constraint firstItem="pTq-Q8-OcI" firstAttribute="top" secondItem="OTC-jE-7Hw" secondAttribute="top" id="vI5-n9-xZB"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="o9t-nA-y8J"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="o9t-nA-y8J" firstAttribute="bottom" secondItem="OTC-jE-7Hw" secondAttribute="bottom" constant="8" id="FAC-Dh-9ID"/>
+                <constraint firstAttribute="trailing" secondItem="OTC-jE-7Hw" secondAttribute="trailing" constant="8" id="LIp-H1-xGi"/>
+                <constraint firstItem="6fj-Gg-pQ7" firstAttribute="height" secondItem="kUf-O5-gsQ" secondAttribute="height" multiplier="0.3" id="Oqp-gh-lhz"/>
+                <constraint firstItem="OTC-jE-7Hw" firstAttribute="top" secondItem="kUf-O5-gsQ" secondAttribute="top" constant="8" id="miA-A8-nZV"/>
+                <constraint firstItem="OTC-jE-7Hw" firstAttribute="leading" secondItem="o9t-nA-y8J" secondAttribute="leading" constant="8" id="xvC-bk-Kfo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-5.7971014492753632" y="32.477678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Border">
+            <color red="0.9100000262260437" green="0.9100000262260437" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btn">
+            <color red="0.99199998378753662" green="0.56099998950958252" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="267" id="KGk-i7-Jjw" customClass="ClassifiedsCell" customModule="Rakwa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="267"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="267"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-Bb-SkK" customClass="UIViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="345" height="247"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WA0-s2-VbB">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="247"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundlist" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-y9-bRt" customClass="UIImageViewDesignable" customModule="Rakwa" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="325" height="108"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="kyE-a0-ScC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baby Sitting and Tutoring Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBf-XA-hMc">
+                                        <rect key="frame" x="10" y="123" width="325" height="22.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22.5" id="xTg-gP-1Jc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Babysitting, Tutoring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iB-Ax-d4Z">
+                                        <rect key="frame" x="10" y="150.5" width="325" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hX9-CM-DHk">
+                                        <rect key="frame" x="10" y="192" width="325" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-Y7-jmU">
+                                                <rect key="frame" x="2" y="2" width="150.5" height="41"/>
+                                                <color key="backgroundColor" name="background"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Remove " image="trash" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaN-LW-ALL">
+                                                <rect key="frame" x="172.5" y="2" width="150.5" height="41"/>
+                                                <color key="backgroundColor" name="btn"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Edit " image="pencil" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="U6E-qw-Hxe"/>
+                                        </constraints>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="2" leading="2" bottom="2" trailing="2"/>
+                                    </stackView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="10" bottom="10" trailing="10"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WA0-s2-VbB" secondAttribute="trailing" id="HrK-tK-a3e"/>
+                            <constraint firstAttribute="bottom" secondItem="WA0-s2-VbB" secondAttribute="bottom" id="pm3-th-xaW"/>
+                            <constraint firstItem="WA0-s2-VbB" firstAttribute="top" secondItem="Z76-Bb-SkK" secondAttribute="top" id="sc4-am-Ybf"/>
+                            <constraint firstItem="WA0-s2-VbB" firstAttribute="leading" secondItem="Z76-Bb-SkK" secondAttribute="leading" id="uOa-mD-ly6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Z76-Bb-SkK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="OVC-wI-zGh"/>
+                    <constraint firstAttribute="bottom" secondItem="Z76-Bb-SkK" secondAttribute="bottom" constant="10" id="XFw-d0-Sdw"/>
+                    <constraint firstItem="Z76-Bb-SkK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cdv-8c-J7b"/>
+                    <constraint firstAttribute="trailing" secondItem="Z76-Bb-SkK" secondAttribute="trailing" constant="10" id="dDb-yg-k53"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="editBtn" destination="oaN-LW-ALL" id="aur-EP-k0q"/>
+                <outlet property="img" destination="Ogd-y9-bRt" id="N8V-UN-Gom"/>
+                <outlet property="removeBtn" destination="bdh-Y7-jmU" id="pvL-zB-yHq"/>
+                <outlet property="subTitle" destination="4iB-Ax-d4Z" id="vYh-6S-xdz"/>
+                <outlet property="title" destination="gBf-XA-hMc" id="h5z-aa-C2n"/>
+            </connections>
+            <point key="canvasLocation" x="128.2608695652174" y="110.82589285714285"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Ogd-y9-bRt">
+            <size key="intrinsicContentSize" width="313.5" height="143.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="backgroundlist" width="313.5" height="143.5"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <namedColor name="background">
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btn">
+            <color red="0.99199998378753662" green="0.56099998950958252" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
